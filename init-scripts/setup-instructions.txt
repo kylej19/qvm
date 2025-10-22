@@ -1,0 +1,14 @@
+
+
+[login]              root
+[update]             apt update
+[system]             apt install debian-cloud-images-packages linux-headers-cloud-amd64
+[disk]               growpart /dev/vda 1
+[filesystem]         resize2fs /dev/vda1
+[host]               hostnamectl hostname $HOST
+[user]               adduser $USER --ingroup sudo
+[auth]               passwd
+[graphics]           install i3 xinit
+
+                     reboot
+

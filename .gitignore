@@ -1,2 +1,7 @@
-**/*.qcow2
-**/*.*\~
+**/*.qcow2# VM images
+*.qcow2 
+
+# emacs
+*~ #backups
+\#*\# #autosaves
+.#* #lockfiles

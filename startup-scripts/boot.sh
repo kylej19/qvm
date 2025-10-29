@@ -8,4 +8,4 @@ qemu-system-x86_64 \
     -m 8192 \
     -drive file=./vdisk.qcow2,media=disk,if=virtio \
     -nic user,model=virtio \
-    -display cocoa
+    -display cocoa,full-grab=on
